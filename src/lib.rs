@@ -11,7 +11,7 @@ mod test{
     use super::*;
     #[test]
     fn simple_addition(){
-        let result = CalculationParser::parse(Rule::calculation, "a+b").unwrap().next().unwrap();
+        let result = CalculationParser::parse(Rule::calculation, "1+2").unwrap().next().unwrap();
         print!("{:#?}",result);
     }
 }
